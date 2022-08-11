@@ -12,7 +12,7 @@ export const signup = async (req, res) => {
 
     const doc = new User({
       email: req.body.email,
-      fullname: req.body.fullname,
+      fullName: req.body.fullName,
       avatarUrl: req.body.avatarUrl,
       passwordHash: hash,
     });
